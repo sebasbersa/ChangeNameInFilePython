@@ -4,7 +4,7 @@
 block_cipher = None
 
 
-a = Analysis(['cambiarNombre.py'],
+a = Analysis(['cambiarnombre.py'],
              pathex=['C:\\Users\\Usuario\\desktop\\pruebas'],
              binaries=[],
              datas=[],
@@ -22,7 +22,7 @@ exe = EXE(pyz,
           a.scripts,
           [],
           exclude_binaries=True,
-          name='cambiarNombre',
+          name='cambiarnombre',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,
@@ -35,4 +35,4 @@ coll = COLLECT(exe,
                strip=False,
                upx=True,
                upx_exclude=[],
-               name='cambiarNombre')
+               name='cambiarnombre')

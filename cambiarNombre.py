@@ -2,7 +2,12 @@ import os
 
 # INGRESAR PATH DONDE ESTAN LOS ARCHIVOS QUE QUIERES CAMBIAR EL NOMBRE DEL ARCHIVO
 #"C:\Users\Usuario\Desktop\archivosCesar\265\431"
-osPath = r"C:\Replace"
+print("Ruta por defecto es: C:/Replace")
+print("- En caso de no ingresar una ruta personalizada, solo presione Enter")
+path = input("ingrese ruta de los archivo: ")
+if (path == ""):
+    path = "C:\Replace"
+osPath = r"" + path
 # INGRESAR
 textoInit = input("Texto a cambiar: ")
 textoChange = input("Texto nuevo: ")
